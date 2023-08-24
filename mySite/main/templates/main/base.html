@@ -1,0 +1,18 @@
+{% load static%}
+<! Doctype html>
+<html>
+    {%block head%} {% endblock%}
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href = "{% static 'style.css'%}">
+
+
+        <title>{% block title%}{% endblock %} | Greco</title>
+    </head>
+
+    <body>
+        <h1>Grocery List</h1>
+        {%block content%}{% endblock %}
+    </body>
+</html>

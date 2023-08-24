@@ -1,0 +1,23 @@
+{%extends 'main/base.html' %} {% load static%}
+
+<html>
+    <head>
+        {%block title%}Home{%endblock%}
+    </head>
+
+    <body>
+        {%block content%}
+        <h1>homepage</h1>
+
+        <ul>
+        {% for item in items %}
+        <li>{{item.name}}</li>
+        {% endfor %}
+        </ul>
+
+        <a href = '{% url "main:itemList" %}'>old</a>
+        
+        {% endblock %}
+    </body>
+</html>
+

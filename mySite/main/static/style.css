@@ -1,0 +1,10 @@
+
+.grayed-out {
+    color: #999;
+    opacity: 0.6;
+}
+
+*{
+    text-decoration: dotted;
+    
+}
