@@ -1,0 +1,23 @@
+<!---->
+on home.html for each item in list
+
+def get_absolute_url(self):
+        return "list/"
+        in models.py 
+
+        <!--<input type = "checkbox"> insert into the line below--> in list.html
+
+list.html
+
+        <script>
+        var list = document.querySelector('td');
+        var grayedOutItems = Array.from(list.querySelectorAll('.grayed-out'));
+    
+        grayedOutItems.forEach(function(item) {
+            list.appendChild(item);
+        });
+    </script>
+
+    <div class="preview">
+            {% include "main/list.html" %}
+        </div>
